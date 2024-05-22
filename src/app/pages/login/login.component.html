@@ -11,10 +11,11 @@
             <span class="p-inputgroup-addon">
                 <i class="fa-solid fa-lock"></i>
             </span>
-            <input type="text" pInputText placeholder="Password" formControlName="password" />
+            <input type="password" pInputText placeholder="Password" formControlName="password" />
         </div>
-        <p-button label="&nbsp;Login">
+        <p-button label="&nbsp;Login" (click)="login()">
             <i class="fa-solid fa-right-to-bracket"></i>
         </p-button>
+        <a routerLink="/register">Need an account? Create here</a>
     </form>
 </div>

@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "guka.mamada@gmail.com",
+      "password": "$2a$10$/5WyUwx34tXAu6utTlqkP.udjxwBopkdzoIIqsvnpBiNTHGv84NH2",
+      "id": "40f4fe88-edd1-4f1d-b27d-c3a12e4d807b",
+      "userName": "guka19",
+      "role": "user"
+    }
+  ],
+  "blogs": []
+}

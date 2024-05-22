@@ -1,1 +1,33 @@
-<p>register works!</p>
+<div class="container">
+    <form [formGroup]="registerForm">
+        <strong class="title">Sign Up</strong>
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="fa-solid fa-user"></i>
+            </span>
+            <input pInputText placeholder="Username" formControlName="userName" />
+        </div>
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="fa-solid fa-at"></i>
+            </span>
+            <input type="email" pInputText placeholder="Email" formControlName="email" />
+        </div>
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="fa-solid fa-lock"></i>
+            </span>
+            <input type="password" pInputText placeholder="Password" formControlName="password" />
+        </div>
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="fa-solid fa-repeat"></i>
+            </span>
+            <input type="password" pInputText placeholder="Repeat Password" formControlName="repeatPassword" />
+        </div>
+        <p-button label="&nbsp;Register" (click)="register()">
+            <i class="fa-solid fa-user"></i>
+        </p-button>
+        <a routerLink="/login">Already have an account? Login here</a>
+    </form>
+</div>
