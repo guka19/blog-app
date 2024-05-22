@@ -1,0 +1,20 @@
+<div class="container">
+    <form [formGroup]="loginForm">
+        <strong class="title">Sign In</strong>
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="fa-solid fa-at"></i>
+            </span>
+            <input pInputText placeholder="Email" formControlName="email" />
+        </div>
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="fa-solid fa-lock"></i>
+            </span>
+            <input type="text" pInputText placeholder="Password" formControlName="password" />
+        </div>
+        <p-button label="&nbsp;Login">
+            <i class="fa-solid fa-right-to-bracket"></i>
+        </p-button>
+    </form>
+</div>
