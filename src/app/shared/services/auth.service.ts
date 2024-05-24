@@ -16,6 +16,10 @@ export class AuthService {
   regUrl = 'http://localhost:3000/users';
   logUrl = 'http://localhost:3000/login';
 
+  private hasToken(): boolean {
+    return !!localStorage.getItem('accessToken');
+  }
+
   setLoggedIn(): void {
     this.isAuthenticatedSubject.next(true);
   }
@@ -27,6 +31,15 @@ export class AuthService {
 
   login(user: userLogin) {
     return this.http.post(this.logUrl, user);
+  }
+
+  setLoggedOut(): void {
+    this.isAuthenticatedSubject.next(false);
+  }
+
+  clearToken(): void {
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('user');
   }
 
   constructor(private http: HttpClient) { }

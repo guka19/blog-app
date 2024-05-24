@@ -1,0 +1,22 @@
+<div class="burger-menu" [class.active]="isMenuOpen">
+    <i style="font-size: 20px;" class="fa-solid fa-bars" (click)="toggleMenu()"></i>
+    <ul class="menu-items" [ngClass]="{ 'active': isMenuOpen }">
+        <li>
+            <i class="fa-solid fa-house"></i>
+            <a routerLink="/">Home</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-mobile"></i>
+            <a routerLink="/reviews">Reviews</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-circle-question"></i>
+            <a routerLink="/about-us">About Us</a>
+        </li>
+        <div class="line"></div>
+        <li class="user">
+            <a routerLink="/profile"><i class="fa-solid fa-user">&nbsp;Profile</i></a>
+            <i class="fa-solid fa-right-from-bracket" (click)="logout()">&nbsp;Logout</i>
+        </li>
+    </ul>
+  </div>

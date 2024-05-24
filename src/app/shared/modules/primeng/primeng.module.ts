@@ -5,6 +5,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { AvatarModule } from 'primeng/avatar';
 
 @NgModule({
   declarations: [],
@@ -13,13 +14,15 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     ButtonModule,
     InputTextModule,
     CheckboxModule,
-    RadioButtonModule
+    RadioButtonModule,
+    AvatarModule,
   ],
   exports: [
     ButtonModule,
     InputTextModule,
     CheckboxModule,
-    RadioButtonModule
+    RadioButtonModule,
+    AvatarModule,
   ]
 })
 export class PrimengModule { }

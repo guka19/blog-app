@@ -1,0 +1,36 @@
+<header>
+    <a routerLink="/home" style="text-decoration: none;">
+        <h1 class="logo">MY-BLOG <i class="fa-brands fa-blogger"></i></h1>
+    </a>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li>
+                    <a routerLink="/home">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/reviews">
+                        <i class="fa-solid fa-comment"></i>
+                        Reviews
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/about-us">
+                        <i class="fa-solid fa-question"></i>
+                        About Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="user">
+            <a routerLink="/profile"><i class="fa-solid fa-user">&nbsp;Profile</i></a>
+            <i class="fa-solid fa-right-from-bracket" (click)="logout()">&nbsp;Logout</i>
+        </div>
+    </div>
+    <div class="burger">
+        <app-burger></app-burger>
+    </div>
+</header>

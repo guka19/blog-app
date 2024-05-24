@@ -12,6 +12,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { PrimengModule } from './shared/modules/primeng/primeng.module';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ReviewsComponent } from './pages/reviews/reviews.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { BurgerComponent } from './components/burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { AdminPageComponent } from './pages/admin-page/admin-page.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    NavbarComponent,
+    ProfileComponent,
+    ReviewsComponent,
+    AboutUsComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule,
